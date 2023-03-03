@@ -66,19 +66,8 @@ app.on('ready', () => {
     // linux ~/.aves-data
     // https://github.com/Aves-Project/aves-go/releases
     //
-    let lastestVersion = '';
-    // fetch the latest version
-    fetch('https://api.github.com/repos/Aves-Project/aves-go/releases/latest')
-    .then(response => response.json())
-    .then(data => {
-        if (data.tag_name) {
-            lastestVersion = data.tag_name;
-        }
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    }
-    );
-    // check if the version is the same
+
+    // check 
 
 });
+
